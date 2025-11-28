@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Maizen Dev | Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #0003;
+        width: 300px;
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #007bff;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #005fcc;
+    }
+</style>
+</head>
 
+<body>
+<div class="box">
+    <h2>Login</h2>
+    <h5>Welcome to Maizen. The password can be recieved only by ordering a ZenShirts Shirt.</h5>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+</div>
+
+<script>
+    const correctPassword = "253537";   // change this
+    const redirectURL = "Maizen.html";        // change this
+
+    function checkPassword() {
+        const userInput = document.getElementById("password").value;
+
+        if (userInput === correctPassword) {
+            // instant redirect
+            window.location.href = redirectURL;
+        } else {
+            alert("Incorrect password.");
+        }
+    }
+</script>
+
+</body>
+</html>
