@@ -5,7 +5,7 @@ body {
 .Note {
   font-style: italic;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   background-color: blueviolet;
   color: antiquewhite;
@@ -43,38 +43,40 @@ iframe {
 }
 
 #drivemad-homepage-button {
-  background-color: rgb(102, 216, 255)
+  background-color: rgb(102, 216, 255);
 }
 
-#drive-mad-homepage-button{
+#drive-mad-homepage-button {
   background-color: chartreuse;
 }
 
 .note-link {
   font-style: italic;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   background-color: blueviolet;
   color: antiquewhite;
 }
 
 .fullscreen-button {
-  width: 100%; 
-  height: 35px; 
+  width: 100%;
+  height: 35px;
   background-color: orange;
   font-size: medium;
 }
 
 .maizen-button {
-  padding: 0 0 0 0;
-  background-color: #007bff;
+  display: inline-block;
+  margin-left: auto;
+  padding: 15px 25px;
+  background-color: #ff6a00;
   color: white;
-  text-decoration: none;
+  font-size: large;
   border-radius: 5px;
-  font-family: sans-serif
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .maizen-button: hover {
   background-color: #0056b3;
 }
-
