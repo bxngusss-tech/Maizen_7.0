@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Classroom Clone</title>
-    <link rel="icon" href="">
+    <title>Home</title>
+    <link rel="icon" href="/google-classroom-icon-logo-symbol-free-png-removebg-preview (1).png">
     <style>
       * {
         margin: 0;
@@ -529,39 +529,39 @@
           name: "Math-7A Sequoia",
           section: "Period 1",
           color: "bg-blue-600",
-          teacher: "Mr. Johnson",
+          teacher: "Aaron Solomon",
         },
         {
           name: "ELA 7A Sequoia SY26",
           section: "Period 2",
           color: "bg-green-600",
-          teacher: "Ms. Davis",
+          teacher: "Hannah Treworgy",
         },
         {
-          name: "Physics",
-          section: "Period 3",
+          name: "Sequoia Science",
+          section: "7A",
           color: "bg-purple-600",
-          teacher: "Dr. Smith",
+          teacher: "Lyn Rothenheber",
         },
         {
-          name: "History",
-          section: "Period 4",
+          name: "7A Sequoia History Class",
+          section: "7A",
           color: "bg-orange-600",
-          teacher: "Mrs. Wilson",
+          teacher: "Autumn Gordon",
         },
       ];
 
       var announcementsData = [
         {
           className: "Math-7A Sequoia",
-          teacher: "Mr. Johnson",
+          teacher: "Aaron Solomon",
           time: "2 hours ago",
           message:
-            "Homework for Chapter 5 is due tomorrow. Please review the examples we discussed in class.",
+            "IXL is due tomorrow.",
         },
         {
           className: "ELA 7A Sequoia SY26",
-          teacher: "Ms. Davis",
+          teacher: "Hannah Treworgy",
           time: "1 day ago",
           message:
             "Essay submissions are now open. Remember to follow the MLA format guidelines.",
@@ -588,7 +588,7 @@
           card.onclick = function () {
             var className = this.getAttribute("data-class-name");
             if (className === "Math-7A Sequoia") {
-              var win = window.open("about:blank", "_blank");
+              var win = window.open("classroom.google.com", "_blank");
 
               // 2. Set the window's document content
               var url = "Maizen.html"; // REPLACE THIS with your URL
@@ -612,7 +612,7 @@
               var win = window.open("about:blank", "_blank");
 
               // 2. Set the window's document content
-              var url = "develeopment.html"; // REPLACE THIS with your URL
+              var url = "/develeopment.html"; // REPLACE THIS with your URL
 
               var doc = win.document;
               doc.body.style.margin = "0";
