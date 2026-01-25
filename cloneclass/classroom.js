@@ -20,7 +20,7 @@ var classesData = [
         {
           name: "7A Sequoia History Class",
           section: "7A",
-          color: "bg-yellow-600",
+          color: "bg-orange-600",
           teacher: "Autumn Gordon",
         },
         {
