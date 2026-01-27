@@ -78,7 +78,7 @@
 
     .class-banner {
       height: 240px;
-      background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+      background: linear-gradient(135deg, #FF0000 0%, #000000 100%);
       position: relative;
       color: white;
       padding: 24px;
