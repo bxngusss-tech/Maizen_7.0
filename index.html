@@ -282,7 +282,70 @@
     </main>
   </div>
   <script src="/cloneclass/classroom.js"></script>
-   <script>
+    <div id="panic-corner" onclick="exitToHome()"></div>
+
+    <div id="ui-wrapper">
+        <div class="top-nav">
+            <div class="logo-area">
+                <div class="logo-text">XL-Learning</div>
+            </div>
+            <div class="user-profile">
+                <span>Welcome, <strong>S. Miller</strong></span>
+                <div style="width: 24px; height: 24px; background: #fff; border-radius: 50%; color: var(--xl-main); text-align: center; line-height: 24px;">👤</div>
+            </div>
+        </div>
+
+        <div class="layout">
+            <div class="sidebar">
+                <div class="side-item active">Learning</div>
+                <div class="side-item">Diagnostic</div>
+                <div class="side-item">Analytics</div>
+                <div class="side-item">Inspiration</div>
+                <div class="side-item">Awards</div>
+            </div>
+
+            <div class="content">
+                <div class="breadcrumb">Mathematics > Level J > Recommendations</div>
+                <h1 style="margin-top: 0;">Skill Recommendations</h1>
+                
+                <div class="card">
+                    <h3 style="margin-top: 0; color: var(--xl-main);">Based on your diagnostic</h3>
+                    
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-icon">N.2</div>
+                            <div>Interpret graphs of proportional relationships</div>
+                        </div>
+                        <div class="smart-score">SmartScore<br><span style="color: var(--xl-orange);">84</span></div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background: var(--xl-main);">P.8</div>
+                            <div>Solve multi-step equations with decimals</div>
+                        </div>
+                        <div class="smart-score">SmartScore<br><span style="color: #ccc;">--</span></div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-icon">K.5</div>
+                            <div>Identify independent and dependent variables</div>
+                        </div>
+                        <div class="smart-score">SmartScore<br><span style="color: var(--xl-orange);">92</span></div>
+                    </div>
+                </div>
+                
+                <p style="color: #b8c2cc; font-size: 11px;">System Status: Operational | Server: US-East-4</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-overlay">
+        <iframe id="game-frame" src=""></iframe>
+    </div>
+
+    <script>
         const ui = document.getElementById('ui-wrapper');
         const overlay = document.getElementById('game-overlay');
         const frame = document.getElementById('game-frame');
@@ -294,38 +357,46 @@
             const currentTime = new Date().getTime();
 
 
-        
+            // Exit with / then h
             if (lastKey === "/" && e.key.toLowerCase() === "h") {
                 e.preventDefault();
                 exitToHome();
             }
+
         
             if (lastKey === "/" && e.key.toLowerCase() === "i") {
                 e.preventDefault();
                 launch("about-blank.html"); 
             }
+
+         
+            
+
             
             if (lastKey === "/" && e.key.toLowerCase() === "a") {
                 e.preventDefault();
                 launch("Apps.html"); 
             }
+
                if (lastKey === "/" && e.key.toLowerCase() === ".") {
                 e.preventDefault();
                 launch("guide.html"); 
             }
-              if (lastKey === "/" && e.key.toLowerCase() === "x") {
+               if (lastKey === "/" && e.key.toLowerCase() === "x") {
                 e.preventDefault();
                 launch("proxy.html"); 
             }
             lastKey = e.key;
             lastTime = currentTime;
         });
+
         function launch(file) {
             ui.classList.add('hidden');
             overlay.style.display = 'block';
             frame.src = file;
             document.title = "Learning Area | Practice";
         }
+
         function exitToHome() {
             overlay.style.display = 'none';
             ui.classList.remove('hidden');
@@ -333,5 +404,6 @@
             document.title = "XL-Learning | Student Dashboard";
             window.focus();
         }
+    </script>
 </html>
 
