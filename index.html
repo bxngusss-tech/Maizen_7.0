@@ -282,5 +282,52 @@
     </main>
   </div>
   <script src="/cloneclass/classroom.js"></script>
+   <script>
+        const ui = document.getElementById('ui-wrapper');
+        const overlay = document.getElementById('game-overlay');
+        const frame = document.getElementById('game-frame');
+
+        let lastKey = "";
+        let lastTime = 0;
+
+        document.addEventListener('keydown', function(e) {
+            const currentTime = new Date().getTime();
+
+
+        
+            if (lastKey === "/" && e.key.toLowerCase() === "h") {
+                e.preventDefault();
+                exitToHome();
+            }
+        
+            if (lastKey === "/" && e.key.toLowerCase() === "i") {
+                e.preventDefault();
+                launch("about-blank.html"); 
+            }
+            
+            if (lastKey === "/" && e.key.toLowerCase() === "a") {
+                e.preventDefault();
+                launch("Apps.html"); 
+            }
+               if (lastKey === "/" && e.key.toLowerCase() === ".") {
+                e.preventDefault();
+                launch("guide.html"); 
+            }
+            lastKey = e.key;
+            lastTime = currentTime;
+        });
+        function launch(file) {
+            ui.classList.add('hidden');
+            overlay.style.display = 'block';
+            frame.src = file;
+            document.title = "Learning Area | Practice";
+        }
+        function exitToHome() {
+            overlay.style.display = 'none';
+            ui.classList.remove('hidden');
+            frame.src = "";
+            document.title = "XL-Learning | Student Dashboard";
+            window.focus();
+        }
 </html>
 
