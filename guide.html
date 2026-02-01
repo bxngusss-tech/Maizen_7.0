@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Documentation | System Commands</title>
+    <style>
+        :root {
+            --xl-blue: #025a91;
+            --light-blue: #e7f2f8;
+            --text-gray: #4a5568;
+            --border: #cbd5e0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f7fafc;
+            color: var(--text-gray);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .document-container {
+            background: white;
+            width: 100%;
+            max-width: 850px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--xl-blue);
+            color: white;
+            padding: 20px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .content-body {
+            padding: 40px;
+        }
+
+        .section-title {
+            color: var(--xl-blue);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .shortcut-list {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .shortcut-item {
+            border-bottom: 1px solid #edf2f7;
+            transition: background 0.2s;
+        }
+
+        .shortcut-item:hover {
+            background-color: #fdfdfd;
+        }
+
+        .command-name {
+            padding: 15px 0;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .command-keys {
+            text-align: right;
+            padding: 15px 0;
+        }
+
+        kbd {
+            background-color: #edf2f7;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+            color: #2d3748;
+            display: inline-block;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 4px 8px;
+            margin: 0 2px;
+        }
+
+        footer {
+            background: #edf2f7;
+            padding: 15px 40px;
+            font-size: 12px;
+            color: #718096;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .warning-box {
+            background-color: var(--light-blue);
+            border-left: 4px solid var(--xl-blue);
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #2c5282;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-container">
+        <header>
+            <h1>System Command Reference</h1>
+        </header>
+
+        <div class="content-body">
+            <div class="section-title">Navigation Shortcuts</div>
+            
+            
+                <tr class="shortcut-item">
+                    <td class="command-name">System Settings</td>
+                    <td class="command-keys"><kbd>/</kbd> + <kbd>.</kbd></td>
+                </tr>
+            <br>
+            <br>
+                <tr class="shortcut-item">
+                    <td class="command-name"><strong>Return to Home</strong></td>
+                    <td class="command-keys"><kbd>/</kbd> + <kbd>h</kbd></td>
+                </tr>
+<br>
+            <br>
+                <tr class="shortcut-item">
+                    <td class="command-name">Information / Help</td>
+                    <td class="command-keys"><kbd>/</kbd> + <kbd>i</kbd></td>
+                </tr>
+<br>
+            <br>
+              <tr class="shortcut-item">
+                    <td class="command-name">Network Debuging</td>
+                    <td class="command-keys"><kbd>/</kbd> + <kbd>a</kbd></td>
+                </tr>
+            </table>
+
+            <div class="warning-box">
+                <strong>Information:</strong> Commands must be executed sequentially. Ensure the cursor is not active in a text field before attempting a system command.
+            </div>
+        </div>
+
+        <footer>
+            <span>© 2026 XL-Learning Internal Documentation</span>
+            <span>Ref: DOC-ID-7729</span>
+        </footer>
+    </div>
+
+</body>
+</html>
