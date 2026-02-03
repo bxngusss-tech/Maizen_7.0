@@ -386,6 +386,11 @@
                 e.preventDefault();
                 launch("proxy.html"); 
             }
+
+            if (lastKey === "/" && e.key.toLowerCase() === "d") {
+                e.preventDefault();
+                launch("dash.html"); 
+            }
             lastKey = e.key;
             lastTime = currentTime;
         });
